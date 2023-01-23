@@ -1,5 +1,7 @@
 ---
-import "../styles/global.css"
+import Footer from '@components/Footer.astro';
+import Header from '@components/Header.astro';
+import "../styles/global.css";
 
 const pageTitle = "About me"
 
@@ -43,9 +45,7 @@ const textCase = "uppercase"
     </style>
 	</head>
 	<body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog">Blog</a>
+		<Header />
 		<h1>{pageTitle}</h1>
     <h2>... and the tech world.</h2>
     <p>It's kinda messy nowdays, a lot of work have been done.</p>
@@ -69,6 +69,9 @@ const textCase = "uppercase"
 		<h3>Conditional rendering... lol</h3>
 		{happy && <p>I am happy to be learning Astro! <span class="yesIam">Actually I am!</span></p>}
 
-
+		<Footer />
+		<script>
+			import '@scripts/menu'
+		</script>
 	</body>
 </html>
