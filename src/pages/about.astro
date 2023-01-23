@@ -11,6 +11,10 @@ const identity = {
 const skills = ["JavaScript", "TypeScript", "NodeJS", "React", "NextJS", "CRA", "Astro", "Functional-Programming"]
 
 const happy = true
+
+const skillColor = "darkolivegreen"
+const fontWeight = "bold"
+const textCase = "uppercase"
 ---
 
 <html lang="en">
@@ -20,6 +24,21 @@ const happy = true
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+		<style define:vars={{skillColor, fontWeight, textCase}}>
+      h1 {
+        color: purple;
+        font-size: 4rem;
+      }
+			.skill {
+				color: var(--skillColor);
+				font-weight: var(--fontWeight);
+				text-transform: var(--textCase);
+			}
+			.yesIam {
+				font-weight: bold;
+				color: teal
+			}
+    </style>
 	</head>
 	<body>
     <a href="/">Home</a>
@@ -40,13 +59,13 @@ const happy = true
 		</ul>
 		<p>Some of my skills are:</p>
 		<ul>
-			{skills.map(skill => <li>{skill}</li>)}
+			{skills.map(skill => <li class="skill">{skill}</li>)}
 		</ul>
 
 		<hr>
 
 		<h3>Conditional rendering... lol</h3>
-		{happy && <p>I am happy to be learning Astro! <span>Actually I am!</span></p>}
+		{happy && <p>I am happy to be learning Astro! <span class="yesIam">Actually I am!</span></p>}
 
 
 	</body>
