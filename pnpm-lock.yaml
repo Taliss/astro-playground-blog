@@ -2,16 +2,16 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/react': ^1.2.2
-  '@astrojs/rss': ^2.0.0
-  '@types/react': ^18.0.21
-  '@types/react-dom': ^18.0.6
-  astro: ^1.9.0
-  react: ^18.0.0
-  react-dom: ^18.0.0
+  '@astrojs/rss': ^2.1.0
+  '@types/react': ^18.0.27
+  '@types/react-dom': ^18.0.10
+  astro: ^1.9.2
+  react: ^18.2.0
+  react-dom: ^18.2.0
 
 dependencies:
   '@astrojs/react': 1.2.2_fxtgt6bjwd6p4cwoordejim2zi
-  '@astrojs/rss': 2.0.0
+  '@astrojs/rss': 2.1.0
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
   astro: 1.9.2
@@ -41,8 +41,8 @@ packages:
       prettier: 2.8.3
       prettier-plugin-astro: 0.7.2
       source-map: 0.7.4
-      vscode-css-languageservice: 6.2.1
-      vscode-html-languageservice: 5.0.3
+      vscode-css-languageservice: 6.2.2
+      vscode-html-languageservice: 5.0.4
       vscode-languageserver: 8.0.2
       vscode-languageserver-protocol: 3.17.2
       vscode-languageserver-textdocument: 1.0.8
@@ -55,8 +55,8 @@ packages:
     dependencies:
       '@astrojs/micromark-extension-mdx-jsx': 1.0.3
       '@astrojs/prism': 1.0.2
-      acorn: 8.8.1
-      acorn-jsx: 5.3.2_acorn@8.8.1
+      acorn: 8.8.2
+      acorn-jsx: 5.3.2_acorn@8.8.2
       github-slugger: 1.5.0
       hast-util-to-html: 8.0.4
       import-meta-resolve: 2.2.1
@@ -74,8 +74,8 @@ packages:
       remark-smartypants: 2.0.0
       shiki: 0.11.1
       unified: 10.1.2
-      unist-util-map: 3.1.2
-      unist-util-visit: 4.1.1
+      unist-util-map: 3.1.3
+      unist-util-visit: 4.1.2
       vfile: 5.3.6
     transitivePeerDependencies:
       - supports-color
@@ -121,10 +121,11 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/rss/2.0.0:
-    resolution: {integrity: sha512-qXsmyq2HhnKRA85US6GLelT47VLhdtS0bNq88umqfB2uneB9vWHSLnOJjhN9rv0mUSQjsFYytF4IEznfmNnpkQ==}
+  /@astrojs/rss/2.1.0:
+    resolution: {integrity: sha512-PrqtIDDAyu4MyIvhBZEQhftui5fqyO9JPvOe4QnVDhErMIYWXd0pVPpqdnE0SKZ5xykMkphYPAQdWDr7VeCzBg==}
     dependencies:
       fast-xml-parser: 4.0.14
+      kleur: 4.1.5
     dev: false
 
   /@astrojs/telemetry/1.0.1:
@@ -644,20 +645,20 @@ packages:
       vscode-uri: 2.1.2
     dev: false
 
-  /@vscode/l10n/0.0.10:
-    resolution: {integrity: sha512-E1OCmDcDWa0Ya7vtSjp/XfHFGqYJfh+YPC1RkATU71fTac+j1JjCcB3qwSzmlKAighx2WxhLlfhS0RwAN++PFQ==}
+  /@vscode/l10n/0.0.11:
+    resolution: {integrity: sha512-ukOMWnCg1tCvT7WnDfsUKQOFDQGsyR5tNgRpwmqi+5/vzU3ghdDXzvIM4IOPdSb3OeSsBNvmSL8nxIVOqi2WXA==}
     dev: false
 
-  /acorn-jsx/5.3.2_acorn@8.8.1:
+  /acorn-jsx/5.3.2_acorn@8.8.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      acorn: 8.8.1
+      acorn: 8.8.2
     dev: false
 
-  /acorn/8.8.1:
-    resolution: {integrity: sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==}
+  /acorn/8.8.2:
+    resolution: {integrity: sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: false
@@ -735,7 +736,7 @@ packages:
       '@types/babel__core': 7.20.0
       '@types/html-escaper': 3.0.0
       '@types/yargs-parser': 21.0.0
-      acorn: 8.8.1
+      acorn: 8.8.2
       boxen: 6.2.1
       ci-info: 3.7.1
       common-ancestor-path: 1.0.1
@@ -776,7 +777,7 @@ packages:
       supports-esm: 1.0.0
       tsconfig-resolver: 3.0.1
       typescript: 4.9.4
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
       vfile: 5.3.6
       vite: 3.2.5
       vitefu: 0.2.4_vite@3.2.5
@@ -824,7 +825,7 @@ packages:
       string-width: 5.1.2
       type-fest: 2.19.0
       widest-line: 4.0.1
-      wrap-ansi: 8.0.1
+      wrap-ansi: 8.1.0
     dev: false
 
   /braces/3.0.2:
@@ -839,7 +840,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001446
+      caniuse-lite: 1.0.30001447
       electron-to-chromium: 1.4.284
       node-releases: 2.0.8
       update-browserslist-db: 1.0.10_browserslist@4.21.4
@@ -857,8 +858,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /caniuse-lite/1.0.30001446:
-    resolution: {integrity: sha512-fEoga4PrImGcwUUGEol/PoFCSBnSkA9drgdkxXkJLsUBOnJ8rs3zDv6ApqYXGQFOyMPsjh79naWhF4DAxbF8rw==}
+  /caniuse-lite/1.0.30001447:
+    resolution: {integrity: sha512-bdKU1BQDPeEXe9A39xJnGtY0uRq/z5osrnXUw0TcK+EYno45Y+U7QU9HhHEyzvMDffpYadFXi3idnSNkcwLkTw==}
     dev: false
 
   /ccount/2.0.1:
@@ -1597,7 +1598,7 @@ packages:
       html-void-elements: 2.0.1
       parse5: 6.0.1
       unist-util-position: 4.0.4
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
       vfile: 5.3.6
       web-namespaces: 2.0.1
       zwitch: 2.0.4
@@ -1908,15 +1909,15 @@ packages:
     dependencies:
       '@types/mdast': 3.0.10
       '@types/unist': 2.0.6
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /mdast-util-find-and-replace/2.2.1:
     resolution: {integrity: sha512-SobxkQXFAdd4b5WmEakmkVoh18icjQRxGy5OWTCzgsLRm1Fu/KCtwD1HIQSsmq5ZRjVH0Ehwg6/Fn3xIUk+nKw==}
     dependencies:
       escape-string-regexp: 5.0.0
-      unist-util-is: 5.1.1
-      unist-util-visit-parents: 5.1.1
+      unist-util-is: 5.2.0
+      unist-util-visit-parents: 5.1.3
     dev: false
 
   /mdast-util-from-markdown/1.2.0:
@@ -1932,7 +1933,7 @@ packages:
       micromark-util-normalize-identifier: 1.0.0
       micromark-util-symbol: 1.0.1
       micromark-util-types: 1.0.2
-      unist-util-stringify-position: 3.0.2
+      unist-util-stringify-position: 3.0.3
       uvu: 0.5.6
     transitivePeerDependencies:
       - supports-color
@@ -2014,8 +2015,8 @@ packages:
       mdast-util-to-markdown: 1.5.0
       parse-entities: 4.0.0
       stringify-entities: 4.0.3
-      unist-util-remove-position: 4.0.1
-      unist-util-stringify-position: 3.0.2
+      unist-util-remove-position: 4.0.2
+      unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.3
     dev: false
 
@@ -2023,21 +2024,21 @@ packages:
     resolution: {integrity: sha512-S+QYsDRLkGi8U7o5JF1agKa/sdP+CNGXXLqC17pdTVL8FHHgQEiwFGa9yE5aYtUxNiFGYoaDy9V1kC85Sz86Gg==}
     dependencies:
       '@types/mdast': 3.0.10
-      unist-util-is: 5.1.1
+      unist-util-is: 5.2.0
     dev: false
 
-  /mdast-util-to-hast/12.2.5:
-    resolution: {integrity: sha512-EFNhT35ZR/VZ85/EedDdCNTq0oFM+NM/+qBomVGQ0+Lcg0nhI8xIwmdCzNMlVlCJNXRprpobtKP/IUh8cfz6zQ==}
+  /mdast-util-to-hast/12.2.6:
+    resolution: {integrity: sha512-Kfo1JNUsi6r6CI7ZOJ6yt/IEKMjMK4nNjQ8C+yc8YBbIlDSp9dmj0zY90ryiu6Vy4CVGv0zi1H4ZoIaYVV8cwA==}
     dependencies:
       '@types/hast': 2.3.4
       '@types/mdast': 3.0.10
       mdast-util-definitions: 5.1.1
       micromark-util-sanitize-uri: 1.1.0
       trim-lines: 3.0.1
-      unist-builder: 3.0.0
+      unist-builder: 3.0.1
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /mdast-util-to-markdown/1.5.0:
@@ -2049,7 +2050,7 @@ packages:
       mdast-util-phrasing: 3.0.0
       mdast-util-to-string: 3.1.0
       micromark-util-decode-string: 1.0.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
       zwitch: 2.0.4
     dev: false
 
@@ -2526,8 +2527,8 @@ packages:
     resolution: {integrity: sha512-b/K8ExXaWC9t34kKeDV8kGXBkXZ1HCSAZRYE7HR14eA1GlXX5L8iWhs8USJNhQU9q5ci413jCKF0gOyovvyRBg==}
     dependencies:
       nlcst-to-string: 3.1.1
-      unist-util-modify-children: 3.1.0
-      unist-util-visit-children: 2.0.1
+      unist-util-modify-children: 3.1.1
+      unist-util-visit-children: 2.0.2
     dev: false
 
   /parse5/6.0.1:
@@ -2751,7 +2752,7 @@ packages:
     dependencies:
       '@types/hast': 2.3.4
       '@types/mdast': 3.0.10
-      mdast-util-to-hast: 12.2.5
+      mdast-util-to-hast: 12.2.6
       unified: 10.1.2
     dev: false
 
@@ -2761,7 +2762,7 @@ packages:
     dependencies:
       retext: 8.1.0
       retext-smartypants: 5.2.0
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /resolve/1.22.1:
@@ -2796,7 +2797,7 @@ packages:
       '@types/nlcst': 1.0.0
       nlcst-to-string: 3.1.1
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /retext-stringify/3.1.0:
@@ -3170,8 +3171,8 @@ packages:
       vfile: 5.3.6
     dev: false
 
-  /unist-builder/3.0.0:
-    resolution: {integrity: sha512-GFxmfEAa0vi9i5sd0R2kcrI9ks0r82NasRq5QHh2ysGngrc6GiqD5CDf1FjPenY4vApmFASBIIlk/jj5J5YbmQ==}
+  /unist-builder/3.0.1:
+    resolution: {integrity: sha512-gnpOw7DIpCA0vpr6NqdPvTWnlPTApCTRzr+38E6hCWx3rz/cjo83SsKIlS1Z+L5ttScQ2AwutNnb8+tAvpb6qQ==}
     dependencies:
       '@types/unist': 2.0.6
     dev: false
@@ -3180,18 +3181,18 @@ packages:
     resolution: {integrity: sha512-qF72kLmPxAw0oN2fwpWIqbXAVyEqUzDHMsbtPvOudIlUzXYFIeQIuxXQCRCFh22B7cixvU0MG7m3MW8FTq/S+A==}
     dev: false
 
-  /unist-util-is/5.1.1:
-    resolution: {integrity: sha512-F5CZ68eYzuSvJjGhCLPL3cYx45IxkqXSetCcRgUXtbcm50X2L9oOWQlfUfDdAf+6Pd27YDblBfdtmsThXmwpbQ==}
+  /unist-util-is/5.2.0:
+    resolution: {integrity: sha512-Glt17jWwZeyqrFqOK0pF1Ded5U3yzJnFr8CG1GMjCWTp9zDo2p+cmD6pWbZU8AgM5WU3IzRv6+rBwhzsGh6hBQ==}
     dev: false
 
-  /unist-util-map/3.1.2:
-    resolution: {integrity: sha512-WLA2R6x/UaopedG2poaWLShf5LCi+BNa6mMkACdjft23PHou4v85PvZItjbO2XgXvukMP365PlL/DrbuMgr3eg==}
+  /unist-util-map/3.1.3:
+    resolution: {integrity: sha512-4/mDauoxqZ6geK97lJ6n2kDk6JK88Vh+hWMSJqyaaP/7eqN1dDhjcjnNxKNm3YU6Sw7PVJtcFMUbnmHvYzb6Vg==}
     dependencies:
       '@types/unist': 2.0.6
     dev: false
 
-  /unist-util-modify-children/3.1.0:
-    resolution: {integrity: sha512-L0UizdncPZ1NIwpmkwFdLo2NaK2Eb5LU/vaQ7lZGkAaOBZfsHp+8T/gVWPVmmMO1hj6gc+XeMoytut8jr7fdyA==}
+  /unist-util-modify-children/3.1.1:
+    resolution: {integrity: sha512-yXi4Lm+TG5VG+qvokP6tpnk+r1EPwyYL04JWDxLvgvPV40jANh7nm3udk65OOWquvbMDe+PL9+LmkxDpTv/7BA==}
     dependencies:
       '@types/unist': 2.0.6
       array-iterate: 2.0.1
@@ -3209,38 +3210,38 @@ packages:
       '@types/unist': 2.0.6
     dev: false
 
-  /unist-util-remove-position/4.0.1:
-    resolution: {integrity: sha512-0yDkppiIhDlPrfHELgB+NLQD5mfjup3a8UYclHruTJWmY74je8g+CIFr79x5f6AkmzSwlvKLbs63hC0meOMowQ==}
+  /unist-util-remove-position/4.0.2:
+    resolution: {integrity: sha512-TkBb0HABNmxzAcfLf4qsIbFbaPDvMO6wa3b3j4VcEzFVaw1LBKwnW4/sRJ/atSLSzoIg41JWEdnE7N6DIhGDGQ==}
     dependencies:
       '@types/unist': 2.0.6
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
-  /unist-util-stringify-position/3.0.2:
-    resolution: {integrity: sha512-7A6eiDCs9UtjcwZOcCpM4aPII3bAAGv13E96IkawkOAW0OhH+yRxtY0lzo8KiHpzEMfH7Q+FizUmwp8Iqy5EWg==}
-    dependencies:
-      '@types/unist': 2.0.6
-    dev: false
-
-  /unist-util-visit-children/2.0.1:
-    resolution: {integrity: sha512-2cEU3dhV1hMfO9ajwb8rJsDedMfsahsm6fCfR8LxDR/w7KcB5lzHQ9dBTQIXsWGNWBFH5MPmaFP3Xh0dWLqClQ==}
+  /unist-util-stringify-position/3.0.3:
+    resolution: {integrity: sha512-k5GzIBZ/QatR8N5X2y+drfpWG8IDBzdnVj6OInRNWm1oXrzydiaAT2OQiA8DPRRZyAKb9b6I2a6PxYklZD0gKg==}
     dependencies:
       '@types/unist': 2.0.6
     dev: false
 
-  /unist-util-visit-parents/5.1.1:
-    resolution: {integrity: sha512-gks4baapT/kNRaWxuGkl5BIhoanZo7sC/cUT/JToSRNL1dYoXRFl75d++NkjYk4TAu2uv2Px+l8guMajogeuiw==}
+  /unist-util-visit-children/2.0.2:
+    resolution: {integrity: sha512-+LWpMFqyUwLGpsQxpumsQ9o9DG2VGLFrpz+rpVXYIEdPy57GSy5HioC0g3bg/8WP9oCLlapQtklOzQ8uLS496Q==}
     dependencies:
       '@types/unist': 2.0.6
-      unist-util-is: 5.1.1
     dev: false
 
-  /unist-util-visit/4.1.1:
-    resolution: {integrity: sha512-n9KN3WV9k4h1DxYR1LoajgN93wpEi/7ZplVe02IoB4gH5ctI1AaF2670BLHQYbwj+pY83gFtyeySFiyMHJklrg==}
+  /unist-util-visit-parents/5.1.3:
+    resolution: {integrity: sha512-x6+y8g7wWMyQhL1iZfhIPhDAs7Xwbn9nRosDXl7qoPTSCy0yNxnKc+hWokFifWQIDGi154rdUqKvbCa4+1kLhg==}
     dependencies:
       '@types/unist': 2.0.6
-      unist-util-is: 5.1.1
-      unist-util-visit-parents: 5.1.1
+      unist-util-is: 5.2.0
+    dev: false
+
+  /unist-util-visit/4.1.2:
+    resolution: {integrity: sha512-MSd8OUGISqHdVvfY9TPhyK2VdUrPgxkUtWSuMHF6XAAFuL4LokseigBnZtPnJMu+FbynTkFNnFlyjxpVKujMRg==}
+    dependencies:
+      '@types/unist': 2.0.6
+      unist-util-is: 5.2.0
+      unist-util-visit-parents: 5.1.3
     dev: false
 
   /update-browserslist-db/1.0.10_browserslist@4.21.4:
@@ -3280,7 +3281,7 @@ packages:
     resolution: {integrity: sha512-0yaU+rj2gKAyEk12ffdSbBfjnnj+b1zqTBv3OQCTn8yEB02bsPizwdBPrLJjHnK+cU9EMMcUnNv938XcZIkmdA==}
     dependencies:
       '@types/unist': 2.0.6
-      unist-util-stringify-position: 3.0.2
+      unist-util-stringify-position: 3.0.3
     dev: false
 
   /vfile/5.3.6:
@@ -3288,7 +3289,7 @@ packages:
     dependencies:
       '@types/unist': 2.0.6
       is-buffer: 2.0.5
-      unist-util-stringify-position: 3.0.2
+      unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.3
     dev: false
 
@@ -3336,19 +3337,19 @@ packages:
       vite: 3.2.5
     dev: false
 
-  /vscode-css-languageservice/6.2.1:
-    resolution: {integrity: sha512-FMaMjB2LQdkHjTCP2CWh2S94xuGsxSc8xr0H9nAACVd/iUDyZLoKFjwoB+mA3v0rpCH2U5vVCVwxyULy61CgqA==}
+  /vscode-css-languageservice/6.2.2:
+    resolution: {integrity: sha512-K3Bl/cYGNlH4MgVtBIYJr9Qj0g3BVMUtioOCc5PJFSlgLPVHpWV5RY5jSDH3hYlldWjokIkXMk1ABMY4bimG7g==}
     dependencies:
-      '@vscode/l10n': 0.0.10
+      '@vscode/l10n': 0.0.11
       vscode-languageserver-textdocument: 1.0.8
       vscode-languageserver-types: 3.17.2
       vscode-uri: 3.0.7
     dev: false
 
-  /vscode-html-languageservice/5.0.3:
-    resolution: {integrity: sha512-6rfrtcHhXDMXmC5pR2WXrx02HiNCzQDynOBMn+53zLxr2hvZrDzoc0QgC0FaFGfcglf7GeOsfhkWvJBFC/a70g==}
+  /vscode-html-languageservice/5.0.4:
+    resolution: {integrity: sha512-tvrySfpglu4B2rQgWGVO/IL+skvU7kBkQotRlxA7ocSyRXOZUd6GA13XHkxo8LPe07KWjeoBlN1aVGqdfTK4xA==}
     dependencies:
-      '@vscode/l10n': 0.0.10
+      '@vscode/l10n': 0.0.11
       vscode-languageserver-textdocument: 1.0.8
       vscode-languageserver-types: 3.17.2
       vscode-uri: 3.0.7
@@ -3440,8 +3441,8 @@ packages:
       string-width: 5.1.2
     dev: false
 
-  /wrap-ansi/8.0.1:
-    resolution: {integrity: sha512-QFF+ufAqhoYHvoHdajT/Po7KoXVBPXS2bgjIam5isfWJPfIOnQZ50JtUiVvCv/sjgacf3yRrt2ZKUZ/V4itN4g==}
+  /wrap-ansi/8.1.0:
+    resolution: {integrity: sha512-si7QWI6zUMq56bESFvagtmzMdGOtoxfR+Sez11Mobfc7tm+VkUckk9bW2UeffTGVUbOksxmSw0AA2gs8g71NCQ==}
     engines: {node: '>=12'}
     dependencies:
       ansi-styles: 6.2.1
